@@ -12,6 +12,6 @@ class Blog extends CI_Controller
 
 	public function welcome()
 	{
-		echo "<h1>Bem-vindo!</h1>";
+		echo "<h1>Bem-vindo, usuário!</h1>";
 	}
 }
