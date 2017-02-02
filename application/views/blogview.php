@@ -16,5 +16,10 @@
 	<?php endforeach; ?>
 	</ol>
 
+	<?php 
+	$this->load->helper('url'); 
+	echo anchor('http://google.com', 'Click Here'); 
+	?>
+
 </body>
 </html>
