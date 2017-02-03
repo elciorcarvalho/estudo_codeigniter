@@ -6,11 +6,12 @@ class Blog extends CI_Controller
 		// Inserir
 		$data['title'] = 'Meu Blog CodeIgniter';
 		$data['page_title'] = 'Olá Blog CodeIgniter';
-		$data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands'); 
+		$data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
 
-		$this->load->view('blogview', $data);
+		$this->load->helper('url');
+		$data['link_p_google'] = "echo anchor('http://google.com', 'Click Here');"
 
-		//$this->load->helper('url');
+		$this->load->view('blogview', $data);		
 	}
 
 	public function welcome()

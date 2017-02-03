@@ -16,6 +16,8 @@
 	<?php endforeach; ?>
 	</ol>
 
+	<p>Teste de link pelo controller: <?php echo $link_p_google; ?></p>
+
 	<?php 
 	$this->load->helper('url'); 
 	echo anchor('http://google.com', 'Click Here'); 
